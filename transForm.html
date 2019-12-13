@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ch1</title>
+	<style>
+		.box-container {
+			display: flex;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			border: 2px solid black;
+			background: rgba(255,255,0,0.7);
+		}
+		.box:hover{
+			/*width: 200px;height: 200px;*/
+			/* 2배 확장 옆에 노드를 무시함*/
+			/*transform: scale(2);*/
+			/*transform: scale(2) rotate(15deg);*/
+			/*transform: skew(-30deg);*/
+
+		/*	이동*/
+		/*	transform: translate(30px, 10px);*/
+		/*	transform: translateX(30px);*/
+			/*transform: translateY(10px);*/
+
+			/*기준점변경*/
+			transform: scale(2);
+			/*transform-origin: right top;*/
+			transform-origin: 10% 50%; /* 퍼센트로도 가능 */
+
+			transform: rotate(10deg);
+
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus est excepturi modi, molestiae molestias natus officia velit! Blanditiis dolorum earum eius expedita magni natus placeat quasi ratione reprehenderit veniam!
+	</p>
+	<div class="box-container">
+		<div class="box">A</div>
+		<div class="box">B</div>
+		<div class="box">C</div>
+		<div class="box">D</div>
+		<div class="box"></div>
+	</div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequatur, deleniti dicta dignissimos dolor esse, ipsum iusto minus molestias non, nulla obcaecati officiis pariatur quibusdam quis repudiandae rerum saepe vero?
+	</p>
+</body>
+</html>
